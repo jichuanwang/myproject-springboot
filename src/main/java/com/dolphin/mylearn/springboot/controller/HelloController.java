@@ -33,6 +33,10 @@ public class HelloController {
         helloService.sayHello(myBean.getName());
         return myBean.getSayToYou();
     }
+    @RequestMapping("/first")
+    public String firstPage(){
+        return "first";
+    }
     @RequestMapping("/getStudents")
     @ResponseBody
     public List<Student> getStudents(){
