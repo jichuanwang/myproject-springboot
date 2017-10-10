@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bootstrap test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/main.css">
+    <style type="text/css">
+        p {
+            color:#333333;
+        }
+
+        #redP p {
+            /* 权值 = 100+1=101 */
+            color:deeppink;  /* 红色 */
+        }
+
+        #redP .red em {
+            /* 权值 = 100+10+1=111 */
+            color:#00F; /* 蓝色 */
+
+        }
+
+        #redP p span em {
+            /* 权值 = 100+1+1+1=103 */
+            color:#00f !important;/*黄色*/
+        }
+    </style>
+
+    <script>
+
+
+    </script>
+</head>
+<body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/static/bootstrap/js/bootstrap.js"></script>
+<div class="container">
+    <div class="well">您好，我在 Well 中！</div>
+
+    <div style="padding: 100px 100px 10px;">
+        <form role="form">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">用户名</span>
+                        <input type="text" class="form-control" placeholder="请输入">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="#music" data-toggle="tab">音乐</a></li>
+        <li><a href="#varity" data-toggle="tab">综艺</a></li>
+        <li><a href="#documentary" data-toggle="tab">纪录片</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="music" class="tab-pane fade in active">
+            <h1>音乐</h1>
+            <p>我的生活中不能没有音乐</p>
+        </div>
+
+        <div id="varity" class="tab-pane fade">
+            <h1>综艺</h1>
+            <p>各自娱乐节目</p>
+        </div>
+
+        <div id="documentary" class="tab-pane fade">
+            <h1>纪录片</h1>
+            <p>军事题材</p>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">菜鸟教程</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">SVN</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">2013</a></li>
+        <li class="active">十一月</li>
+    </ol>
+
+    <ul class="pagination">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+
+    </ul>
+
+    <ul class="pager">
+        <li class="previous"><a  href="#">Older</a></li>
+        <li class="next"><a href="#" >向后</a></li>
+    </ul>
+    <h1><span class="label label-danger">开始</span></h1>
+
+    <div class="jumbotron" style="width: 20%">
+        <p>sssssssss</p>
+    </div>
+
+    <div class="alert alert-success">成功！很好地完成了提交。</div>
+
+    <div class="progress progress-striped active">
+        <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 10%;">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">标题</div>
+        <div class="panel-body">haha</div>
+
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

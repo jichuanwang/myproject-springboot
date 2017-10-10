@@ -28,10 +28,8 @@ public class HelloController {
 
 
     @RequestMapping("/")
-    @ResponseBody
     public String hello(){
-        helloService.sayHello(myBean.getName());
-        return myBean.getSayToYou();
+        return "/view/index.html";
     }
     @RequestMapping("/first")
     public String firstPage(){
